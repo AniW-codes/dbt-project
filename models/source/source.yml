@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: source #As mentioned in DataBricks
+    database: '{{ target.catalog }}' #Catalog name in DataBricks  
+    schema: source  #As mentioned in DataBricks
+    tables:
+      - name: fact_sales
+      - name: fact_returns
+      - name: dim_date
+      - name: dim_store
+      - name: dim_product
+      - name: dim_customer
+      - name: items
+      
